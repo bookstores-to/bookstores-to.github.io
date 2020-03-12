@@ -55,10 +55,12 @@ p {
   color: #999;
   
 }
+
 .columns {
-  columns:  2;
+  column-count: 2;
+  column-width: 350px;
   column-rule: 1px dotted #999;
-  column-gap: 3em;
+  column-gap: 2.5em;
 }
 
 div.chain {
