@@ -1,0 +1,52 @@
+Sheets: 
+
+Formula for HTML:
+
+=CONCATENATE ("<article id=",CHAR(34),B2,CHAR(34),">",,CHAR(10),"<section class=",CHAR(34),"article-header",CHAR(34),">",,CHAR(10),"<h4>",CHAR(10),C2,,CHAR(10),"</h4>",CHAR(10),"<!-- subtitle/specialty -->",,CHAR(10),"<p>",,CHAR(10),"<strong>",,CHAR(10),D2,,CHAR(10),      "</strong>",,CHAR(10),"</p>",,CHAR(10),"</section>",,CHAR(10),CHAR(10),"<!-- ",,CHAR(10),"<section class=",CHAR(34),"info",CHAR(34),">",,CHAR(10),"<p>",,CHAR(10),L2,,CHAR(10),"</p>",CHAR(10),"</section>",CHAR(10),"-->",CHAR(10),CHAR(10),"<!-- p class desc -->",,CHAR(10),"<p class=",CHAR(34),"desc",CHAR(34), " id=",CHAR(34),B2,CHAR(34),">",,CHAR(10),    E2," | ",CHAR(10),F2," | ",CHAR(10),G2," | ",CHAR(10),H2," | ",CHAR(10),I2," | ",CHAR(10),,CHAR(10),        "<br>",,CHAR(10),    "<a href=",CHAR(34),J2,CHAR(34),">Link</a> | ",,CHAR(10),    "<a href=",CHAR(34),K2,CHAR(34),">Map</a> | ",,CHAR(10),"</p>",CHAR(10),CHAR(10),"<br>",,CHAR(10),CHAR(10),"</article>")
+
+Change formula to delete extra headers in chain stores:
+
+eg: =CONCATENATE ("<article id=",CHAR(34),B2,CHAR(34),">",,CHAR(10),
+///snip///
+"<section class=",CHAR(34),"article-header",CHAR(34),">",,CHAR(10),"<h4>",CHAR(10),C2,,CHAR(10),"</h4>",CHAR(10),"<!-- subtitle/specialty -->",,CHAR(10),"<p>",,CHAR(10),"<strong>",,CHAR(10),D2,,CHAR(10),      "</strong>",,CHAR(10),"</p>",,CHAR(10),"</section>",,CHAR(10),CHAR(10),"<!-- ",,CHAR(10),"<section class=",CHAR(34),"info",CHAR(34),">",,CHAR(10),"<p>",,CHAR(10),L2,,CHAR(10),"</p>",CHAR(10),"</section>",CHAR(10),"-->",CHAR(10),CHAR(10),"<!-- p class desc -->",,CHAR(10),"<p class=",CHAR(34),"desc",CHAR(34), " id=",CHAR(34),B2,CHAR(34),">",,CHAR(10),    E2," | ",CHAR(10),F2," | ",CHAR(10),G2," | ",CHAR(10),H2," | ",CHAR(10),I2," | ",CHAR(10),,CHAR(10),        
+///snip///
+"<br>",,CHAR(10),    "<a href=",CHAR(34),J2,CHAR(34),">Link</a> | ",,CHAR(10),    "<a href=",CHAR(34),K2,CHAR(34),">Map</a> | ",,CHAR(10),"</p>",CHAR(10),CHAR(10),"<br>",,CHAR(10),CHAR(10),"</article>")
+
+
+---------
+********
+HTML contains following oddities:
+-Find: ["<article id]
+-Replace all: [<article id] (extra douuble quote)
+
+-Find: [""]
+-Replace all: ["] (double double quotes)
+**********
+
+
+
+Original source - https://codepen.io/kevinpowell/pen/BYXdJx
+
+Bacon - https://baconipsum.com/?paras=5&type=meat-and-filler&start-with-lorem=1&make-it-spicy=1
+
+W3 schools - https://www.w3schools.com/cssref/css3_pr_column-gap.asp
+ - https://www.w3schools.com/Css/css_link.asp
+
+
+<a name="anchor"></a>
+
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_css
+
+
+<A href="#bottom"><button class ="button"> Wakka wakka</button><a>
+
+
+Notes.txt
+
+
+
+
+
+
+
+

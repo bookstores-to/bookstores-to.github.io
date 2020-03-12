@@ -1,0 +1,43 @@
+Caversham
+
+<article id="caversham">
+
+  <section class="article-header">
+    <h4>
+       Caversham Booksellers
+    </h4>
+       <!-- subtitle/specialty -->
+    <p>
+      <strong>
+        North America's largest mental health bookstore
+      </strong>
+      </p>
+    </section>
+    
+   <!-- 
+       <section class="info">
+          <p>
+          Additiional desc goes here
+          </p>
+       </section> 
+    -->
+    
+     <!-- p class desc -->
+  <p class="desc" id="caversham">
+    Caversham Booksellers | 
+    Harbord & Spadina | 
+    416-944-0962 | 
+    98 Harbord St | 
+    M5S 1G6 
+        <br>
+    <a href="http://cavbk.ca/">Link</a> | 
+    <a href="https://goo.gl/maps/SWrXKeouRV85oN6LA">Map</a> | 
+    </p>
+   
+ <br>
+  
+</article>
+
+<!-- optional button link 
+ <A href="http://cavbk.ca/"><button class ="button">Website</button><a>
+ -->

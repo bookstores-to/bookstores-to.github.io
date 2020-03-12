@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,900');
+
+body {
+  font-size: 1.3rem;
+  line-height: 1.65;
+  font-family: 'Muli', sans-serif;
+  color: #1E1E24;
+  background-color: #333;
+  margin: 2em;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #999;
+  font-weight: 600;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 2pt;
+  font-size: 2rem;
+  color: #999;
+  font-weight: 600;
+}
+
+ /* unvisited link */
+a:link {
+  color: red;
+}
+/* visited link */
+a:visited {
+  color: green;
+}
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+/* selected link */
+a:active {
+  color: blue;
+} 
+
+.button {
+  background-color: #555555;
+  border: none;
+  color: red;
+  padding: 6px 15px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+p {
+  margin-top: 0; 
+  color: #999;
+  
+}
+.columns {
+  columns:  2;
+  column-rule: 1px dotted #999;
+  column-gap: 3em;
+}
+
+div.chain {
+  -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+          page-break-inside: avoid; /* Firefox */
+}
+
+
+.desc {     
+  display: inline-block;
+}
+.intro {
+  column-span: all;
+}
