@@ -9,6 +9,7 @@ body {
   margin: 2em;
 }
 
+
 h1 {
   font-size: 4rem;
   color: #999;
@@ -53,15 +54,37 @@ a:active {
 p {
   margin-top: 0; 
   color: #999;
-  
 }
 
+.columns {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-width: 350px;
+     -moz-column-width: 350px;
+          column-width: 350px;
+  -webkit-column-gap: 2.5em;
+     -moz-column-gap: 2.5em;
+          column-gap: 2.5em;}
+  -webkit-column-rule: 1px dotted #999;
+     -moz-column-rule: 1px dotted #999;
+          column-rule: 1px dotted #999;
+}
+
+@media (min-width: 500px) {
+  .columns {
+    height: 350px;
+  }
+/*
 .columns {
   column-count: 2;
   column-width: 350px;
   column-rule: 1px dotted #999;
   column-gap: 2.5em;
 }
+
+*/
+
 
 div.chain {
   -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
@@ -75,3 +98,4 @@ div.chain {
 .intro {
   column-span: all;
 }
+
