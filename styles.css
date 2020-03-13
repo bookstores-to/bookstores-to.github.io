@@ -9,17 +9,24 @@ body {
   margin: 2em;
 }
 
-
 h1 {
   font-size: 4rem;
   color: #999;
   font-weight: 600;
 }
 
-h4 {
+h3 {
   margin-top: 0;
   margin-bottom: 2pt;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: #999;
+  font-weight: 600;
+}
+
+strong {
+  margin-top: 0;
+  margin-bottom: 2pt;
+  font-size: 1.25rem;
   color: #999;
   font-weight: 600;
 }
@@ -88,13 +95,11 @@ p {
 
 */
 
-
 div.chain {
 -webkit-column-break-inside: avoid;
           page-break-inside: avoid;
                break-inside: avoid;
 }
-
 
 .desc {     
   display: inline-block;
