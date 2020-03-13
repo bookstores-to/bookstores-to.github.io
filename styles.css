@@ -69,6 +69,9 @@ p {
   -webkit-column-rule: 1px dotted #999;
      -moz-column-rule: 1px dotted #999;
           column-rule: 1px dotted #999;
+-webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
 }
 
 @media (min-width: 500px) {
@@ -87,8 +90,9 @@ p {
 
 
 div.chain {
-  -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-          page-break-inside: avoid; /* Firefox */
+-webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
 }
 
 
